@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    background-image: url("../images/bg-menu-mobile.jpg");
+    font-family: "Roboto", sans-serif;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    width: 100%;
+    height: 11.0625rem;
+}
+
+#logo {
+    position: sticky;
+    margin: auto;
+    width: 18.625rem;
+    height: 11.0625rem;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: hsla(33, 50%, 44%, 1);
+    width: 80vw;
+    max-width: 600px;
+    height: 22.4375rem;
+    margin: 2rem auto;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    /* margin-top: 1rem; */
+    bottom: 1.125rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+.txt-container {
+    padding: 1rem;
+    text-align: center;
+    margin: 1.85rem 1.85rem 1rem 1.85rem;
+    color: #fff;
+}
+
+.img-container {
+    height: 117px;
+    width: 126px;
+}
+
+#tosa {
+    background-image: url("../images/tosa.svg");
+    background-repeat: no-repeat;
+    height: 117px;
+    width: 126px;
+    margin-bottom: 0.5rem;
+}
+
+.button-container {
+    width: 18.125rem;
+    height: 3.0625rem;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+
+.button {
+    font-size: 0.98rem;
+    color: #fff;
+}
+
+.container {
+    max-width: 37.5rem;
+    margin: auto;
+}
+
+.form-container {
+    width: 100%;
+    height: 1.625rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8125rem;
+}
+
+#form-container .input {
+    justify-content: flex-end;
+}
+
+#form-container label {
+    padding-right: 5rem;
+}
+
+#radio {
+    width: 10.8125rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-submit-form {
+    width: 100%;
+    margin-top: 1.3125rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-submit-form #cancelar {
+    margin-left: 1rem;
+    background: rgba(196, 196, 196, 0.425);
+    border: 0.5px;
+    font-weight: none;
+    color: rgba(0, 0, 0, 0.644);
+}
+
+.button-submit-form #cancelar a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.61);
+}
+
+/* =========MENU========== */
+
+.grid {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.container-nav {
+    position: fixed;
+}
+
+nav {
+    top: 0;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.submit-container li {
+    width: 11.625rem;
+    height: 3.0625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+nav .menu {
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav.show .menu {
+    opacity: 1;
+    visibility: visible;
+    background-image: url("../images/bg-menu-mobile.jpg");
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav.show .menu .logo-desk {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+    top: 17rem;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+nav .icon-close {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -2rem;
+    transition: 0.3s;
+    right: 1.5rem;
+}
+
+nav.show .icon-close {
+    visibility: visible;
+    color: black;
+    opacity: 1;
+    display: flex;
+    position: absolute;
+    right: 1.5rem;
+    top: 2rem;
+}
+
+nav .icon-menu {
+    position: absolute;
+    right: 1.5rem;
+    top: 2rem;
+    visibility: visible;
+    opacity: 1;
+    /* transition: 0.2s; */
+}
+
+nav.show .icon-menu {
+    visibility: hidden;
+    opacity: 0;
+    top: -2rem;
+    transition: 0.1s;
+}
+
+.toggle {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.submit-container button,
+li {
+    width: 5.5rem;
+    height: 1.6875rem;
+    background: #a77537;
+    border-radius: 10px;
+    font-weight: 900;
+    border: 2px solid black;
+}
