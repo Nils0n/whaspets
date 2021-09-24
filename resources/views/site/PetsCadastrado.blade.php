@@ -1,6 +1,7 @@
 @extends('site.layouts.template')
 @section('content')
 
-Tela de Pets Cadastrados
+<h1 class="title">Pets Cadastrados</h1>
+
 
 @endsection

@@ -2,11 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Controllers\TemplateController;
+use App\Http\Controllers\PetController;
+
 
 
 Route::view('/' , 'site.Home')->name('site.index');
 
-Route::view('/cadastropet' , 'site.CadastroPet')->name('site.cadastropet');
+Route::get('/cadastropet' , [PetController::class, 'index'])->name('site.cadastropet');
 
 Route::view('/cadastroservico' , 'site.CadastroServico')->name('site.cadastroservico');
 

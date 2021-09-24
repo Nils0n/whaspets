@@ -1,6 +1,7 @@
 @extends('site.layouts.template')
 @section('content')
 
-Tela de Serviços Agendados
+<h1 class="title">Serviços Agendados</h1>
+
 
 @endsection

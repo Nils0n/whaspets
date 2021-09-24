@@ -1,7 +1,8 @@
 @extends('site.layouts.template')
 @section('content')
 
-<h1> Cadastro de Serviço </h1>
+<h1 class="title"> Cadastro de Serviço</h1>
+
 
 <hr>
 

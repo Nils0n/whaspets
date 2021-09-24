@@ -48,7 +48,7 @@ section {
     background: hsla(33, 50%, 44%, 1);
     width: 80vw;
     max-width: 600px;
-    height: 22.4375rem;
+    height: fit-content;
     margin: 2rem auto;
 }
 
@@ -59,6 +59,11 @@ footer {
     bottom: 1.125rem;
     text-align: center;
     font-weight: 900;
+}
+
+h1.title {
+    margin: 1rem auto;
+    color: rgba(0, 0, 0, 0.897);
 }
 
 .txt-container {
@@ -128,6 +133,7 @@ footer {
     margin-top: 1.3125rem;
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 1rem;
 }
 
 .button-submit-form #cancelar {
